@@ -3,7 +3,7 @@ import timeit
 import time
 from ripser import Rips, ripser
 
-dirr = 'Datasets/'
+dirr = '../Datasets/'
 
 #################################
 ## dragon
