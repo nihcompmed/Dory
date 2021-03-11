@@ -3,7 +3,7 @@ import gudhi as gd
 
 import time
 
-dirr = 'Datasets/'
+dirr = '../Datasets/'
 
 #######################################
 ### dragon
