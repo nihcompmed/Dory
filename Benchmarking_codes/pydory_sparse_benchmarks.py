@@ -1,7 +1,7 @@
 import time
 import pydory as dory
 
-dirr = 'Datasets/'
+dirr = '../Datasets/'
 
 #################################
 ## dragon
