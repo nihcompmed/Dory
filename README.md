@@ -11,7 +11,7 @@ This wrapper has a very little overhead. Peak memory usage and computation time 
 ## Reproducing benchmarks
 Ripser: The benchmarks in https://arxiv.org/abs/2103.05608 were produced using Ripser as on March 22, 2021. It has since been updated. We provide a copy of the legacy version (copied from `https://github.com/Ripser/ripser` on March 22) in this repository. We used `c++ -std=c++11 ripser.cpp -o ripser -O3` to compile Ripser.
 
-Gudhi (v. 3.4.0) can be installed using `pip install Gudhi==3.4.0`. The python file to reproduce benchmarks is Gudhi_benchmarks.py in Benchmarking_codes.
+Gudhi (v. 3.4.0) can be installed using `pip3 install Gudhi==3.4.0`. The python file to reproduce benchmarks is Gudhi_benchmarks.py in Benchmarking_codes.
 
 ### Data sets
 All data sets, except for Hi-C, are provided in the folder Datasets.
