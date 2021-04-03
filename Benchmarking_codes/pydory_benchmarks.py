@@ -1,4 +1,3 @@
-import time
 import pydory as dory
 
 dirr = '../Datasets/'
@@ -9,7 +8,7 @@ dirr = '../Datasets/'
 
 dataset = 'dragon'
 source = dirr+'dragon2000_locs.csv'
-target = dirr + 'DoryS_' + dataset + '_'
+target = dirr + 'Dory_' + dataset + '_'
 
 print('#########################')
 print('\nProcessing', dataset)
@@ -29,7 +28,7 @@ dory.compute_PH(source, thresh, filetype, threads, target, dim)
 #################################
 dataset = 'fract'
 source = dirr+'fractal_r_distmat.csv'
-target = dirr + 'DoryS_' + dataset + '_'
+target = dirr + 'Dory_' + dataset + '_'
 
 print('#########################')
 print('\nProcessing', dataset)
@@ -48,7 +47,7 @@ dory.compute_PH(source, thresh, filetype, threads, target, dim)
 
 dataset = 'o3'
 source = dirr+'o3_8192_locs.csv'
-target = dirr + 'DoryS_' + dataset + '_'
+target = dirr + 'Dory_' + dataset + '_'
 print('#########################')
 print('\nProcessing', dataset)
 print('\n#########################')
@@ -67,7 +66,7 @@ dory.compute_PH(source, thresh, filetype, threads, target, dim)
 
 dataset = 'torus4'
 source = dirr+'torus4_locs.csv'
-target = dirr + 'DoryS_' + dataset + '_'
+target = dirr + 'Dory_' + dataset + '_'
 
 print('#########################')
 print('\nProcessing', dataset)
@@ -79,6 +78,39 @@ filetype = 1
 dim = 2
 dory.compute_PH(source, thresh, filetype, threads, target, dim)
 
+#################################
+## HiC control
+#################################
 
+dataset = 'HiC_control'
+source = dirr+'HiC/control_400.csv'
+target = dirr + 'Dory_' + dataset + '_'
 
+print('#########################')
+print('\nProcessing', dataset)
+print('\n#########################')
+
+thresh = 400
+threads = 4
+filetype = 2
+dim = 2
+dory.compute_PH(source, thresh, filetype, threads, target, dim)
+
+#################################
+## HiC auxin
+#################################
+
+dataset = 'HiC_auxin'
+source = dirr+'HiC/auxin_400.csv'
+target = dirr + 'Dory_' + dataset + '_'
+
+print('#########################')
+print('\nProcessing', dataset)
+print('\n#########################')
+
+thresh = 400
+threads = 4
+filetype = 2
+dim = 2
+dory.compute_PH(source, thresh, filetype, threads, target, dim)
 
