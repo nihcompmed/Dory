@@ -28,9 +28,7 @@ def search_edges(n_elements, bin1, bin2, pixels, weights, thresh, edges, count):
 def save_edges(h5, pwd, exp_name, thresh):
 
     print("\nFinding edges for", exp_name)
-    #pwd = '/Users/aaaggarwalm4/Downloads/HiC_analysis/Experiment/'+exp_name
     edge_file = pwd+'/'+exp_name+'_'+str(thresh)+'.csv'
-    
     
     n_elements = h5['pixels']['bin1_id'].shape[0]
     weights = h5['bins']['weight'][:]
