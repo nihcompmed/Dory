@@ -14,7 +14,7 @@ Ripser: The benchmarks in https://arxiv.org/abs/2103.05608 were produced using R
 Gudhi (v. 3.4.0) can be installed using `pip install Gudhi==3.4.0`. The python file to reproduce benchmarks is Gudhi_benchmarks.py in Benchmarking_codes.
 
 ### Data sets
-All data sets, except for Hi-C are provided in the folder Datasets.
+All data sets, except for Hi-C, are provided in the folder Datasets.
 
 ### Hi-C data sets
 The steps to obtain and process Hi-C data sets are as follows:
