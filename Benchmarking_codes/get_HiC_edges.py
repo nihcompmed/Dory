@@ -28,7 +28,6 @@ def search_edges(n_elements, bin1, bin2, pixels, weights, thresh, edges, count):
 def save_edges(h5, pwd, exp_name, thresh):
 
     print("\nFinding edges for", exp_name)
-    #pwd = '/Users/aaaggarwalm4/Downloads/HiC_analysis/Experiment/'+exp_name
     edge_file = pwd+'/'+exp_name+'_'+str(thresh)+'.csv'
     
     
@@ -66,14 +65,14 @@ def save_edges(h5, pwd, exp_name, thresh):
 
 
 thresh = 400
-h5 = h5py.File('4DNFIFLDVASC.mcool', 'r')
+h5 = h5py.File('../Datasets/HiC/4DNFIFLDVASC.mcool', 'r')
 h5 = h5['resolutions']['1000']
 exp_name = 'control'
 pwd = '../HiC'
 save_edges(h5, pwd, exp_name, thresh)
 
 thresh = 400
-h5 = h5py.File('4DNFILP99QJS.mcool', 'r')
+h5 = h5py.File('../Datasets/HiC/4DNFILP99QJS.mcool', 'r')
 h5 = h5['resolutions']['1000']
 exp_name = 'auxin'
 pwd = '../HiC'
