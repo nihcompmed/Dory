@@ -1,7 +1,6 @@
 import numpy as np
 import h5py
 from numba import njit, prange
-import cooler 
 
 @njit
 def search_edges(n_elements, bin1, bin2, pixels, weights, thresh, edges, count):
