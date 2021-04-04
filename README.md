@@ -9,7 +9,7 @@ Use `pip3 install pydory` to install the Python (v. 3.5+) wrapper for Dory. It w
 
 ## Reproducing benchmarks
 
-Dory: Run the python file pydory_benchmarks.py for benchmarks. This wrapper has little overhead, and peak memory usage and computation time is similar to the C source code.
+Dory: Run the python file pydory_benchmarks.py for benchmarks. This wrapper has little overhead, and peak memory usage and computation time are similar to the C source code.
 
 Ripser: The benchmarks in https://arxiv.org/abs/2103.05608 were produced using Ripser as on March 22, 2021. It has since been updated. We provide a copy of the legacy version (copied from `https://github.com/Ripser/ripser` on March 22) in this repository. We used `c++ -std=c++11 ripser.cpp -o ripser -O3` to compile Ripser.
 
