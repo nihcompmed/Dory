@@ -18,7 +18,9 @@ thresh = 1000
 threads = 4
 filetype = 1
 dim = 1
-dory.compute_PH(source, thresh, filetype, threads, target, dim)
+compute_cycles = 0
+reduce_cyc_lengths = 0
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
 
 
 #################################
@@ -37,7 +39,7 @@ thresh = 1000
 threads = 4
 filetype = 0
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
 
 
 
@@ -56,7 +58,7 @@ thresh = 1
 threads = 4
 filetype = 1
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
 
 
 
@@ -76,7 +78,7 @@ thresh = 0.15
 threads = 4
 filetype = 1
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
 
 #################################
 ## HiC control
@@ -94,7 +96,7 @@ thresh = 400
 threads = 4
 filetype = 2
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
 
 #################################
 ## HiC auxin
@@ -112,5 +114,5 @@ thresh = 400
 threads = 4
 filetype = 2
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
 
