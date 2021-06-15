@@ -2,6 +2,10 @@ import pydory as dory
 
 dirr = '../Datasets/'
 
+compute_cycles = 0
+reduce_cyc_lengths = 0
+suppress_output = 0
+
 #################################
 ## dragon
 #################################
@@ -18,9 +22,7 @@ thresh = 1000
 threads = 4
 filetype = 1
 dim = 1
-compute_cycles = 0
-reduce_cyc_lengths = 0
-dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 
 
 #################################
@@ -39,7 +41,7 @@ thresh = 1000
 threads = 4
 filetype = 0
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 
 
 
@@ -58,7 +60,7 @@ thresh = 1
 threads = 4
 filetype = 1
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 
 
 
@@ -78,7 +80,7 @@ thresh = 0.15
 threads = 4
 filetype = 1
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 
 #################################
 ## HiC control
@@ -96,7 +98,7 @@ thresh = 400
 threads = 4
 filetype = 2
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 
 #################################
 ## HiC auxin
@@ -114,5 +116,5 @@ thresh = 400
 threads = 4
 filetype = 2
 dim = 2
-dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths)
+dory.compute_PH(source, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 
