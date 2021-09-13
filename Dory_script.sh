@@ -51,5 +51,3 @@ echo "torus4 (H2), DoryNS 4 threads"
 time Dory/DoryNS.o Datasets/torus4/torus4_locs.csv 0.15 1 4 Datasets/torus4/DoryNS_H2_th4_ 2 0 0 1
 echo "torus4 (H2), DoryNS 1 thread"
 time Dory/DoryNS.o Datasets/torus4/torus4_locs.csv 0.15 1 1 Datasets/torus4/DoryNS_H2_th1_ 2 0 0 1
-make ripser
-time ripser/ripser Datasets/Dragon/dragon2000_locs.csv --dim 2 --threshold 1000
