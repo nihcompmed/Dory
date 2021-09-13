@@ -12,7 +12,7 @@ Use `pip3 install pydory` to install the Python (v. 3.5+) wrapper for Dory. It w
 ## Reproducing benchmarks
 
 Dory: Run the script Dory_script.sh for timing benchmarks.
-Ripser: The benchmarks in https://arxiv.org/abs/2103.05608 were produced using Ripser v 1.2.1 (March, 2021). Use the script ripser_script.sh for timing benchmarks.
+Ripser: Use the script ripser_script.sh for timing benchmarks.
 
 Instruments in macOS or Valgrind can be used to determine peak memory usage.
 
