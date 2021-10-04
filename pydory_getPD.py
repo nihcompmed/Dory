@@ -11,7 +11,7 @@ reduce_cyc_lengths = 0
 suppress_output = 1
 threads = 4
 lower_thresh = 0
-insignficance = -1
+insignificance = -1
 
 #################################
 ## dragon
