@@ -11,7 +11,7 @@ reduce_cyc_lengths = 0
 suppress_output = 1
 threads = 4
 lower_thresh = 0
-insignificance = -1
+
 
 #################################
 ## dragon
@@ -34,7 +34,7 @@ dim = 1
 
 start = time.time()
 
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, insignificance, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, uppress_output)
 print('Time taken for', dataset, ':', time.time() - start)
 
 
@@ -56,7 +56,7 @@ filetype = 0
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, insignificance, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ':', time.time() - start)
 
 
@@ -79,7 +79,7 @@ filetype = 1
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, insignificance, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ':', time.time() - start)
 
 #################################
@@ -100,7 +100,7 @@ filetype = 1
 dim = 1
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, sinsignificance, uppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, uppress_output)
 print('Time taken for', dataset, ' (H1):', time.time() - start)
 
 
@@ -122,7 +122,7 @@ filetype = 1
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, insignificance, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ' (H2):', time.time() - start)
 
 #################################
@@ -143,7 +143,7 @@ filetype = 2
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, insignificance, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ':', time.time() - start)
 
 #################################
@@ -164,6 +164,6 @@ filetype = 2
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, insignificance, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ':', time.time() - start)
 
