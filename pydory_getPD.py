@@ -34,7 +34,7 @@ dim = 1
 
 start = time.time()
 
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, uppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ':', time.time() - start)
 
 
@@ -100,7 +100,7 @@ filetype = 1
 dim = 1
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, uppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, suppress_output)
 print('Time taken for', dataset, ' (H1):', time.time() - start)
 
 
