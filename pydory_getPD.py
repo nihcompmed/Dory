@@ -12,6 +12,13 @@ suppress_output = 1
 threads = 4
 lower_thresh = 0
 
+# Filetype details
+# Accepts comma-separated files
+#
+# 0: Distance square matrix
+# 1: Point-cloud (locations)
+# 2: List of edges in the format --- v1, v2, edge length
+
 
 #################################
 ## dragon
