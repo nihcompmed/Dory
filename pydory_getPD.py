@@ -19,6 +19,8 @@ lower_thresh = 0
 # 1: Point-cloud (locations)
 # 2: List of edges in the format --- v1, v2, edge length
 
+# dim = 1 for up to and including H1
+# dim = 2 for up to and including H2
 
 #################################
 ## dragon
