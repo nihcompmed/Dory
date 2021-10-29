@@ -7,7 +7,7 @@ Repository for https://arxiv.org/abs/2103.05608.
 ### PyDory
 PyDory is a lightweight Python wrapper for Dory.
 
-Use `pip3 install pydory` to install the Python (v. 3.5+) wrapper for Dory. It will require gcc-10.2 with openMP support. If there are multiple gcc versions installed, then `CC=gcc-10.2 python3 -m pip install pydory` should work.
+Use `pip3 install pydory` to install the Python (v. 3.5+) wrapper for Dory. It will require gcc-10.2 with openMP support. If gcc-10.2 is not the default gcc version, then `CC=gcc-10.2 python3 -m pip install pydory` should work.
 
 See pyDory_getPD.py for example of a python script.
 
