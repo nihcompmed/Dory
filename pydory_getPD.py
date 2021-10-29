@@ -23,7 +23,7 @@ lower_thresh = 0
 # dim = 2 for up to and including H2
 
 #################################
-## dragon
+## dragon (point-cloud, H1)
 #################################
 
 dataset = 'Dragon'
@@ -50,7 +50,7 @@ print('Time taken for', dataset, ':', time.time() - start)
 #################################
 
 #################################
-## fract
+## fract (distance matrix, H2)
 #################################
 dataset = 'fract'
 dirr = main_dirr+dataset+'/'
@@ -71,7 +71,7 @@ print('Time taken for', dataset, ':', time.time() - start)
 
 
 #################################
-## o3
+## o3 (point-cloud, H2)
 #################################
 
 dataset = 'o3'
@@ -92,7 +92,7 @@ dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, co
 print('Time taken for', dataset, ':', time.time() - start)
 
 #################################
-## torus4 (H1)
+## torus4 (point-cloud, H1)
 #################################
 
 dataset = 'torus4'
@@ -114,7 +114,7 @@ print('Time taken for', dataset, ' (H1):', time.time() - start)
 
 
 #################################
-## torus4 (H2)
+## torus4 (point-cloud, H2)
 #################################
 
 dataset = 'torus4'
@@ -135,7 +135,7 @@ dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, co
 print('Time taken for', dataset, ' (H2):', time.time() - start)
 
 #################################
-## HiC control
+## HiC control (list of edges, H2)
 #################################
 
 dataset = 'HiC'
@@ -156,7 +156,7 @@ dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, co
 print('Time taken for', dataset, ':', time.time() - start)
 
 #################################
-## HiC auxin
+## HiC auxin (list of edges, H2)
 #################################
 
 dataset = 'HiC'
