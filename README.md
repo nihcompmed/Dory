@@ -1,6 +1,8 @@
 # Dory
 Overcoming barriers to computing Persistent Homology
 
+Please make sure that the latest version 1.1.101 of pyDory is installed.
+
 Repository for https://arxiv.org/abs/2103.05608.
 
 
