@@ -1,6 +1,6 @@
-Hi-C data sets
+#Hi-C data sets
 
-The steps to obtain and process Hi-C data sets are as follows:
+##Process Hi-C data sets
 
 1. Download pairs file for Hi-C control from https://data.4dnucleome.org/files-processed/4DNFITH9KJF1/ (~33.97 GB) and for Hi-C auxin from https://data.4dnucleome.org/files-processed/4DNFI2X45Z5L/ (~33.05 GB) to this folder.
 2. Download cooler CLI (https://cooler.readthedocs.io/en/latest/quickstart.html). Run `pip3 install cooler` in command terminal.
@@ -28,13 +28,13 @@ zcat < $PAIRS_FILE \
 `cooler balance -p 6 -c 1000000 4DNFITH9KJF1.cool` and `cooler balance -p 6 -c 1000000 4DNFI2X45Z5L.cool`.
 5. Run `python3 get_HiC_edges.py` to generate the filtration in sparse format: vertex, vertex, edge-length. This extraction is optimized using Python packages hdf5 and numba.
 
-Computing PH and H1 loops
+##Computing PH and H1 loops
 
 1. Run `python3 compute_PH.py` to compute PH, birth-cycles, shorten them, and smooth them.
 2. Run `python3 estimate_persistence.py` to determine possibly significant H1 loops.
 3. Plotting figures are 'plot_' files.
 
-Cycle and gene analysis
+##Cycle and gene analysis
 
 This is done for birth-cycles computed up to threshold of 150.
 
