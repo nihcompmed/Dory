@@ -38,6 +38,7 @@ Cycle and gene analysis
 
 This is done for birth-cycles computed up to threshold of 150.
 
-1. Run `python3 compute_PH_thresholds.py`.
-
+1. Run `python3 compute_PH_thresholds.py` to compute PH and birth-cycles.
+2. Run `python3 plot_cyc_on_matrix.py` to plot loops (cis-chromosome1) on contact matrix.
+3. Run `python3 plot_chromosome_arc.py` to plot loops with long-range interaction on chromosome arc.
 
