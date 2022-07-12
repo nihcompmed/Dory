@@ -26,12 +26,18 @@ zcat < $PAIRS_FILE \
 ```
 4. Balance the HiC-contact matrices.
 `cooler balance -p 6 -c 1000000 4DNFITH9KJF1.cool` and `cooler balance -p 6 -c 1000000 4DNFI2X45Z5L.cool`.
-
-
 5. Run `python3 get_HiC_edges.py` to generate the filtration in sparse format: vertex, vertex, edge-length. This extraction is optimized using Python packages hdf5 and numba.
 
 Computing PH and H1 loops
 
-1. Run `compute_PH.py` to compute PH, birth-cycles, shorten them, and smooth them.
-2. Run `estimate_persistence.py` to determine possibly significant H1 loops.
-3. 
+1. Run `python3 compute_PH.py` to compute PH, birth-cycles, shorten them, and smooth them.
+2. Run `python3 estimate_persistence.py` to determine possibly significant H1 loops.
+3. Plotting figures are 'plot_' files.
+
+Cycle and gene analysis
+
+This is done for birth-cycles computed up to threshold of 150.
+
+1. Run `python3 compute_PH_thresholds.py`.
+
+
