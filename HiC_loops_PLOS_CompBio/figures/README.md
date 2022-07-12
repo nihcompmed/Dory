@@ -1,0 +1,1 @@
+Stores generated figures.
