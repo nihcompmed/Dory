@@ -10,11 +10,11 @@ main_dirr = 'Datasets/'
 #            , filetype, threads, target, dim\
 #            , compute_cycles, reduce_cyc_lengths, cyc_thresh, suppress_output)
 
-# source: Input file in csv format. Details in filetype below.
+# source: string, Input file in csv format. Details in filetype below.
 
-# lower_thresh: Experimental. Best to set at 0.
+# lower_thresh: float. Experimental. Best to set at 0.
 
-# thresh: Threshold for PH computation. Set to -1 to consider all possible simplices on the point-cloud.
+# thresh: float. Threshold for PH computation. Set to -1 to consider all possible simplices on the point-cloud.
 
 # filetype --- 0, 1, 2, 3
 # Filetype details
@@ -24,9 +24,9 @@ main_dirr = 'Datasets/'
 # 2: List of edges in the format --- v1, v2, edge length
 # 3: Sorted list of edges in the format --- v1, v2, edge length, sorted in increasing order of edge length
 
-# threads --- number of threads for serial-parallel computation, generally 4.
+# threads --- integer, number of threads for serial-parallel computation, generally 4.
 
-# target --- prefix for location of saving the results
+# target --- string, prefix for location of saving the results
 # Output files for PD
 # H1 persistence diagram is stored as a txt file: target+'H1_pers_data.txt'
 # H2 persistence diagram is stored as a txt file: target+'H2_pers_data.txt'
@@ -44,7 +44,7 @@ main_dirr = 'Datasets/'
 # reduce_cyc_lengths = 1 for greedy shortening.
 # Note: Set compute_cycles and reduce_cyc_lengths to same value.
 
-# cyc_thresh: Threshold for cycle computation.
+# cyc_thresh: float. Threshold for cycle computation.
 # Only cycles born at parameter <= cyc_thresh will be considered for shortening
 # and saved as target+'minimal_V_birth_H1.txt', target+'minimal_V_birth_H2.txt'
 # Each line of the saved file is a cycle.
