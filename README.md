@@ -11,7 +11,7 @@ PyDory is a lightweight Python wrapper for Dory.
 
 Use `pip3 install pydory` to install the Python (v. 3.5+) wrapper for Dory. It will require gcc-10.2 with openMP support. If gcc-10.2 is not the default gcc version, then `CC=gcc-10.2 python3 -m pip install pydory` should work.
 
-See pyDory_getPD.py for an example of a python script.
+**See pyDory_getPD.py for an example of a python script with details on usage.**
 
 The resulting persistence-pairs are stored as files H0_pers_data.txt, H1_pers_data.txt, and H2_pers_data.txt. The death of features that do not die is stored as -1.
 
