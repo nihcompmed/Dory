@@ -54,6 +54,7 @@ main_dirr = 'Datasets/'
 # suppress_output: 0, 1
 # suppress_output = 0 to show progress.
 # suppress_output = 1 to hide progress.
+# Note: Progress is to give a rough estimation of how long it might taketo finish computation, and does not imply linear in time progression.
 
 
 
