@@ -5,6 +5,57 @@ import time
 
 main_dirr = 'Datasets/'
 
+# Main command:
+# dory.compute_PH(source, lower_thresh, thresh\
+#            , filetype, threads, target, dim\
+#            , compute_cycles, reduce_cyc_lengths, cyc_thresh, suppress_output)
+
+# source: Input file in csv format. Details in filetype below.
+
+# lower_thresh: Experimental. Best to set at 0.
+
+# thresh: Threshold for PH computation. Set to -1 to consider all possible simplices on the point-cloud.
+
+# filetype --- 0, 1, 2, 3
+# Filetype details
+# Accepts comma-separated files
+# 0: Distance square matrix
+# 1: Point-cloud (locations in N-dimensional space) in the format --- x1, x2, ..., xN
+# 2: List of edges in the format --- v1, v2, edge length
+# 3: Sorted list of edges in the format --- v1, v2, edge length, sorted in increasing order of edge length
+
+# threads --- number of threads for serial-parallel computation, generally 4.
+
+# target --- prefix for location of saving the results
+# Output files for PD
+# H1 persistence diagram is stored as a txt file: target+'H1_pers_data.txt'
+# H2 persistence diagram is stored as a txt file: target+'H2_pers_data.txt'
+
+# dim --- 1, 2.
+# dim = 1 for up to and including H1
+# dim = 2 for up to and including H2
+
+# compute_cycles --- 0, 1.
+# compute_cycles = 0 if only want PD.
+# compute_cycles = 1 if want representative boundaries.
+
+# reduce_cyc_lengths --- 0, 1.
+# reduce_cyc_lengths = 0 to ignore greedy shortening.
+# reduce_cyc_lengths = 1 for greedy shortening.
+# Note: Set compute_cycles and reduce_cyc_lengths to same value.
+
+# cyc_thresh: Threshold for cycle computation.
+# Only cycles born at parameter <= cyc_thresh will be considered for shortening
+# and saved as target+'minimal_V_birth_H1.txt', target+'minimal_V_birth_H2.txt'
+# Each line of the saved file is a cycle.
+# Each H1 cycle is stored as v1, v2, v3, v4, ..... where (v_2i, v_(2i+1)) is an edge in the H1-cycle.
+# Each H2 cycle is stored as v1, v2, v3, v4, ..... where (v_3i, v_(3i+1), v_(3i+2)) is a triangular face in the H2-cycle.
+
+# suppress_output: 0, 1
+# suppress_output = 0 to show progress.
+# suppress_output = 1 to hide progress.
+
+
 
 compute_cycles = 0
 reduce_cyc_lengths = 0
@@ -12,15 +63,9 @@ suppress_output = 1
 threads = 4
 lower_thresh = 0
 
-# Filetype details
-# Accepts comma-separated files
-#
-# 0: Distance square matrix
-# 1: Point-cloud (locations)
-# 2: List of edges in the format --- v1, v2, edge length
 
-# dim = 1 for up to and including H1
-# dim = 2 for up to and including H2
+
+
 
 #################################
 ## dragon (point-cloud, H1)
