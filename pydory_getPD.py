@@ -48,13 +48,13 @@ main_dirr = 'Datasets/'
 # Only cycles born at parameter <= cyc_thresh will be considered for shortening
 # and saved as target+'minimal_V_birth_H1.txt', target+'minimal_V_birth_H2.txt'
 # Each line of the saved file is a cycle.
-# Each H1 cycle is stored as v1, v2, v3, v4, ..... where (v_2i, v_(2i+1)) is an edge in the H1-cycle.
-# Each H2 cycle is stored as v1, v2, v3, v4, ..... where (v_3i, v_(3i+1), v_(3i+2)) is a triangular face in the H2-cycle.
+# Each H1 cycle is stored as v0, v1, v2, v3, ..... where (v_2i, v_(2i+1)) is an edge in the H1-cycle.
+# Each H2 cycle is stored as v0, v1, v2, v3, ..... where (v_3i, v_(3i+1), v_(3i+2)) is a triangular face in the H2-cycle.
 
 # suppress_output: 0, 1
 # suppress_output = 0 to show progress.
 # suppress_output = 1 to hide progress.
-# Note: Progress is to give a rough estimation of how long it might taketo finish computation, and does not imply linear in time progression.
+# Note: Progress is to give a rough estimate of how long it might take to finish computation, and does not imply linear in time progression.
 
 
 
