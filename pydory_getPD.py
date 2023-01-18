@@ -8,7 +8,8 @@ main_dirr = 'Datasets/'
 # Main command:
 # dory.compute_PH(source, lower_thresh, thresh\
 #            , filetype, threads, target, dim\
-#            , compute_cycles, reduce_cyc_lengths, cyc_thresh, suppress_output)
+#            , compute_cycles, reduce_cyc_lengths, cyc_thresh, suppress_output\
+#            , hom_batch_size, cohom_batch_size)
 
 # source: string, Input file in csv format. Details in filetype below.
 
@@ -56,6 +57,11 @@ main_dirr = 'Datasets/'
 # suppress_output = 1 to hide progress.
 # Note: Progress is to give a rough estimate of how long it might take to finish computation, and does not imply linear in time progression.
 
+# hom_batch_size: integer
+# Batch size for serial-parallel computation of H0 computation. Suggested value 1000.
+
+# cohom_batch_size: integer
+# Batch size for serial-parallel computation of coH1 and coH2 computation. Suggested value 100.
 
 
 compute_cycles = 0
@@ -64,6 +70,8 @@ suppress_output = 1
 threads = 4
 lower_thresh = 0
 
+hom_ws = 1000
+cohom_ws = 100
 
 
 
@@ -89,7 +97,7 @@ dim = 1
 
 start = time.time()
 
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ':', time.time() - start)
 
 
@@ -111,7 +119,7 @@ filetype = 0
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ':', time.time() - start)
 
 
@@ -134,7 +142,7 @@ filetype = 1
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ':', time.time() - start)
 
 #################################
@@ -155,7 +163,7 @@ filetype = 1
 dim = 1
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ' (H1):', time.time() - start)
 
 
@@ -177,7 +185,7 @@ filetype = 1
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ' (H2):', time.time() - start)
 
 #################################
@@ -198,7 +206,7 @@ filetype = 2
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ':', time.time() - start)
 
 #################################
@@ -219,6 +227,6 @@ filetype = 2
 dim = 2
 
 start = time.time()
-dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output)
+dory.compute_PH(source, lower_thresh, thresh, filetype, threads, target, dim, compute_cycles, reduce_cyc_lengths, thresh, suppress_output, hom_ws, cohom_ws)
 print('Time taken for', dataset, ':', time.time() - start)
 
