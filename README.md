@@ -16,6 +16,8 @@ It is currently not compatible with Jupyter notebook, and should be run via comm
 
 The resulting persistence-pairs are stored as files H0_pers_data.txt, H1_pers_data.txt, and H2_pers_data.txt. The death of features that do not die is stored as -1.
 
+CAUTION: Please make sure floating-point numbers are  stored in decimal notation and not scientific notation in the source files. 
+
 
 ## Reproducing benchmarks
 
