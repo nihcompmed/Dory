@@ -106,7 +106,7 @@ print('Time taken for', dataset, ':', time.time() - start)
 #################################
 ## fract (distance matrix, H2)
 #################################
-dataset = 'fract'
+dataset = 'Fract'
 dirr = main_dirr+dataset+'/'
 source = dirr+'fractal_r_distmat.csv'
 target = dirr + 'Dory'
@@ -194,7 +194,7 @@ print('Time taken for', dataset, ' (H2):', time.time() - start)
 
 dataset = 'HiC'
 dirr = main_dirr+dataset+'/'
-source = dirr+'control_500.csv'
+source = dirr+'control_400.csv'
 target = dirr + 'Dory_control_'
 
 print('#########################')
@@ -215,7 +215,7 @@ print('Time taken for', dataset, ':', time.time() - start)
 
 dataset = 'HiC'
 dirr = main_dirr+dataset+'/'
-source = dirr+'auxin_500.csv'
+source = dirr+'auxin_400.csv'
 target = dirr + 'Dory_auxin_'
 
 print('#########################')
