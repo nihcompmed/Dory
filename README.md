@@ -1,9 +1,9 @@
 # Dory
-Overcoming barriers to computing Persistent Homology
+Computing Persistent Homology (VR-filtration) and tight cycle representatives (loops and voids) for large data sets
 
 **Please make sure that the latest version 1.1.109 of pyDory is installed.**
 
-Repository for https://arxiv.org/abs/2103.05608.
+Repository for https://www.sciencedirect.com/science/article/pii/S1877750324000838 and https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010341.
 
 
 ### PyDory
